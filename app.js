@@ -30,8 +30,16 @@ $('.button2').click(function(){
 
 $('#step3').mouseover(function(){
     $('#step3').css("background-color", 'red');
-})
+});
+
 $('#step3').mouseleave(function(){
     $('#step3').css("background-color", 'blue');
-})
+});
 
+let friends = ['Ashley', 'Armeen', 'Fehzan', 'James', 'Tim', 'Chris', 'Andy', 'Nick', 'GC', 'Alex'];
+$('.button4').click(function(){
+    for(i = 0; i < friends.length; i++){
+        let newli = $("<li>" + friends[i] + "</li>")
+        $('ul').append(newli);
+    }
+});
