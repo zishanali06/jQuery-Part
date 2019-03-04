@@ -7,3 +7,6 @@ $(document).ready(function(){
     })
 });
 
+$('.button2').click(function(){
+    alert($('#input1').val());
+});
